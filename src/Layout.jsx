@@ -38,7 +38,7 @@ const BarraNavegacion = () => {
                     {/* Desktop Navigation */}
                     <nav className="nav-desktop">
                         <Link 
-                            to={'/inicio'}
+                            to={'/'}
                             className="nav-link"
                         >
                             INICIO

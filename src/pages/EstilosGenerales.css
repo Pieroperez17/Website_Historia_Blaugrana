@@ -24,7 +24,7 @@
     height: 200px;
     background-position: center;
     object-fit: cover;
-    filter: opacity(0.2);
+    filter: opacity(0.4);
 }
 
 .info-club {
