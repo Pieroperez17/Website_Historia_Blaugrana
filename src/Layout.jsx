@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import InputBusquedaSimple from "./components/BarraBusquedaMain.jsx";
 import { LuUserRound } from "react-icons/lu";
 import { LuShoppingCart } from "react-icons/lu";
-
+import Image from './public/logo.png';
 import './index.css';
 
 const BarraNavegacion = () => {
@@ -17,7 +17,7 @@ const BarraNavegacion = () => {
                 <div className="Texto-info">🚚📦 Envíos GRATIS en todo Lima desde S/.500 💰 💳</div>
                 <div className="navbar-content">
                     <div className="navbar-hd">
-                        <img  src="src/public/logo.png" alt="Logo Historia Blaugrana" className="logo-image" />
+                        <img  src={Image} alt="Logo Historia Blaugrana" className="logo-image" />
                         <InputBusquedaSimple
                             placeholder="Buscar producto o información"
                             value={busqueda}
