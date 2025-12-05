@@ -17,10 +17,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          {/* Pagina Raiz */}
-          <Route path="/*" element={<Navigate to="/inicio" replace />} />
           {/* Otras Rutas */}
-          <Route path="/inicio" element={<Inicio/>} />
+          <Route path="/" element={<Inicio/>} />
           <Route path="/nuevos-ingresos" element={<NuevosIngresos/>} />
           <Route path="/clubes" element={<Clubes/>} />
           <Route path="/paises" element={<Paises/>} />
