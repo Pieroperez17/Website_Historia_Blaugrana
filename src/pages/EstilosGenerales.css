@@ -1,0 +1,69 @@
+.container-club {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 20px;                   
+    margin: 20px auto;
+    max-width: 80vw;
+    box-sizing: border-box;
+    color: #000000ff;
+}
+
+.card-club {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-club {
+    height: 200px;
+    background-position: center;
+    object-fit: cover;
+    filter: opacity(0.2);
+}
+
+.info-club {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000ff;
+}
+@media (max-width: 600px) {
+    .container-club {
+        gap: 2px; 
+        margin: 3px 0px;
+        max-width: 100vw;
+    }
+    .card-club {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 40vw;
+        height: 15vh;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .image-club {
+        height: 15vh; 
+        background-position: center;
+        object-fit: cover;
+        filter: opacity(0.2);
+    }
+    .info-club {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000000ff;
+        h2 {
+            font-size: 14px;
+        }
+    }
+}

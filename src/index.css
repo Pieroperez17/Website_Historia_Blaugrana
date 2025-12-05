@@ -1,0 +1,276 @@
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:  url("//retrofc.pe/cdn/fonts/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?h1=cmV0cm9mYy5wZQ&h2=cmV0cm9mY3dlYi5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=dc2bc2d3375b49c3393ec197ac4ea3ba1d06a8552d1c97f3efd4431043bdd69b") format("woff");
+}
+
+
+
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar estilos */
+.navbar {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 230px;
+  z-index: 10;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.Texto-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000f1;
+  color: white;
+
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar-hd{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 173px;
+}
+
+.nav-desktop {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  padding: 16px 0;
+  width: 100%;
+
+  border-top: solid 1px #e0e0e0;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.aww{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: rgb(0, 0, 0);
+  div{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+    p{
+      margin: 0px;
+      font-size: 0.7rem;
+      font-weight: normal;
+    }
+  }
+}
+
+.logo-image {
+  height: 70%;
+}
+
+
+
+
+.nav-link {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #4492C2 ;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #fa7725f1;
+}
+
+.nav-mobile {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-mobile.open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.nav-mobile-content {
+  padding: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-link-mobile {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link-mobile:hover {
+  background-color: #ffffff20;
+}
+/* Responsivo*/
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-desktop {
+  display: none;
+  }
+  .main {
+    padding-left: 0px;
+  }
+}
+
+main {
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background: #212020;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  padding-bottom: 20px;
+  height: 100%;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #4492C2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #76abcb;
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+  color: #cccccc;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 0 0.5rem;
+    font-size: 0.95rem;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding-bottom: 2vh;
+  }
+  .footer-links {
+    gap: 0.5rem;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
