@@ -28,12 +28,12 @@ function SimpleSearchBar() {
                 value={inputValue}
                 onChange={handleInputChange}
                 style={{
-                flex: 1,
-                border: 'none',
-                outline: 'none',
-                fontSize: '16px',
-                color: '#333',
-                background: 'transparent'
+                    flex: 1,
+                    border: 'none',
+                    outline: 'none',
+                    fontSize: '16px',
+                    color: '#333',
+                    background: 'transparent'
                 }}
             />
             <button

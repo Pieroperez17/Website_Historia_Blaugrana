@@ -60,7 +60,6 @@ export default function Paises() {
                             <img src={club.imagenRef?.url} alt={club.imagenRef?.name} className="image-club" />
                             <div className="info-club">
                                 <h2>{club.nombre}</h2>
-                                <p>Country: {club.nombre}</p>
                             </div>
                         </div>
                     ))}
