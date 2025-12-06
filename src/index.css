@@ -29,24 +29,17 @@ body {
 
 /* Navbar estilos */
 .navbar {
-  background: #ffffff;
   color: rgb(0, 0, 0);
   width: 100%;
-  height: 230px;
   z-index: 10;
 }
 
 .navbar-container {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  height: 250px;
 }
 
 .Texto-info{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
@@ -57,6 +50,8 @@ body {
 }
 
 .navbar-content {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,15 +63,15 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 173px;
+  height: 100%;
 }
 
 .nav-desktop {
   display: flex;
   justify-content: center;
   gap: 6rem;
-  padding: 16px 0;
-  width: 100%;
+  padding: 16px 0;  
+  margin: 0px auto;
 
   border-top: solid 1px #e0e0e0;
   border-bottom: solid 1px #e0e0e0;
@@ -103,7 +98,7 @@ body {
 }
 
 .logo-image {
-  height: 70%;
+  height: calc(173px*0.7);
 }
 
 
@@ -126,6 +121,9 @@ body {
 .menu-toggle {
   display: none;
   background: none;
+  position: absolute;
+  top: 11vh;
+  right: 6vw;
   border: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
@@ -134,14 +132,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.menu-toggle:hover {
-  background-color: #fa7725f1;
-}
 
 .nav-mobile {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
+  color: black;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
@@ -165,7 +161,7 @@ body {
   text-align: left;
   background: none;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -182,21 +178,42 @@ body {
   .menu-toggle {
     display: block;
   }
+  .navbar-content {
+    width: 99vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .nav-desktop {
-  display: none;
+    display: none;
+  }
+  .search-inpu {
+    display: none;
+  }
+  .Texto-info{
+    font-size: smaller;
+  }
+  .navbar-hd{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
   }
   .main {
     padding-left: 0px;
   }
+
+
 }
 
 main {
   margin: 0px auto;
+  margin-top: 1rem;
   width: 100%;
   height: 100%;
   flex: 1;
 }
 .container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

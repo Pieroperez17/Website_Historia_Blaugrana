@@ -17,8 +17,9 @@ const BarraNavegacion = () => {
                 <div className="Texto-info">🚚📦 Envíos GRATIS en todo Lima desde S/.500 💰 💳</div>
                 <div className="navbar-content">
                     <div className="navbar-hd">
-                        <img  src={Image} alt="Logo Historia Blaugrana" className="logo-image" />
+                        <Link to={'/'}><img  src={Image} alt="Logo Historia Blaugrana" className="logo-image" /></Link>
                         <InputBusquedaSimple
+                            className="search-input" 
                             placeholder="Buscar producto o información"
                             value={busqueda}
                             onChange={e => setBusqueda(e.target.value)}
@@ -83,7 +84,7 @@ const BarraNavegacion = () => {
                 <nav className={`nav-mobile ${open ? 'open' : ''}`}>
                     <div className="nav-mobile-content">
                         <Link
-                            to={'/inicio'}
+                            to={'/'}
                             className="nav-link-mobile"
                         >
                             Inicio
@@ -137,7 +138,7 @@ const Layout = ({children}) => {
                         © {new Date().getFullYear()} Historia Blaugrana Shop-store. Todos los derechos reservados.
                     </p>
                     <nav className="footer-nav">
-                        <Link to="/inicio" className="footer-link">Inicio</Link>
+                        <Link to="/" className="footer-link">Inicio</Link>
                         <Link to="/clubes" className="footer-link">Clubes</Link>
                         <Link to="/paises" className="footer-link">Países</Link>
                         <Link to="/nuevos-ingresos" className="footer-link">Nuevos Ingresos</Link>

@@ -12,6 +12,8 @@ function SimpleSearchBar() {
         console.log('Valor ingresado:', inputValue);
     };
 
+
+
     return (
         <div style={{
             display: 'flex',

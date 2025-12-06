@@ -1,14 +1,62 @@
 import Layout from "../Layout.jsx";
+import { useEffect, useState } from "react";
 import React from "react";
+import { CategoryCarousel } from "../components/CategoryCarousel.jsx";
+import { ThreeDot } from 'react-loading-indicators'
 
 export default function Inicio() {
+    const [clubesData, setClubesData] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const baseUrl = import.meta.env.VITE_API_Url ;
+        const apiAuth = import.meta.env.VITE_API_Authorization ;
+
+        if (!baseUrl) {
+            console.error("API base URL not found in environment variables.");
+            console.log("Current env vars:", baseUrl);
+            return;
+        }
+        if (!apiAuth) {
+            console.error("API authorization token not found in environment variables.");
+            return;
+        }
+
+
+    async function fetchCategories() {
+        try {
+            const res = await fetch(`${baseUrl}/api/categories?populate=*`, {
+                method: "GET",
+                headers: {
+                    ...(apiAuth ? { Authorization: apiAuth } : {}),
+                },
+            });
+            if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
+            const json = await res.json();
+            // If the API returns an array use it directly, otherwise try common wrappers
+            setClubesData(json.data);
+            setIsLoading(false);
+            //console.log(json.data[0].imagenRef.url);
+        } catch (err) {
+            if (err.name !== "AbortError") console.error("Error loading categories:", err);
+        }
+    }
+
+    fetchCategories();
+    return;
+    }, []);
+
     return (
         <Layout>
             <main style={styles.container}>
-                <img style={styles.imge} src="https://jdesblog.s3.eu-west-1.amazonaws.com/wp-content/uploads/2025/07/Blog_Header_1920x840-38-1920x840.jpg" alt="" />
-                <h1>Bienvenid@ a Historia Blaugrana</h1>
-                <p>Esta es la página de inicio. Aquí encontrarás un breve resumen sobre la historia del club.</p>
-                
+                <img style={styles.imge} src="https://magical-horn-ed73f8415c.media.strapiapp.com/imagetest_19a734a241.jpg" alt="" />
+                { isLoading ? (
+                    <div style={{ display: 'flex', gap:'2rem'  ,justifyContent: 'center', alignItems: 'center', height: '20vh' }}>
+                        <ThreeDot variant="bounce" color="#4492C2" size="small" text="" textColor="" />
+                    </div>
+                ) : (
+                    <CategoryCarousel categories={clubesData.filter( club => club.tipo == 'Club')} />
+                )}
             </main>
         </Layout>
         
@@ -24,6 +72,5 @@ const styles = {
     },
     imge: {
         width: "100%",
-        height: "auto",
     },
 };

@@ -56,7 +56,7 @@ export default function NuevosIngresos() {
                 </div>
             ) : (
                 <div className="container-club">
-                    {NuevosIngresosData.map((producto) => (
+                    {Nuevos_Ingresos.map((producto) => (
                         <ViewCardProduct key={producto.id} product={producto} />
                     ))}
                 </div>
