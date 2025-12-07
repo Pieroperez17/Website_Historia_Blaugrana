@@ -78,3 +78,11 @@
     padding-left: 4rem;
     text-decoration-line:overline;
 }
+.salto{
+    display: none;
+}
+@media (max-width: 600px) {
+    .salto{
+        display: inline;
+    }
+}

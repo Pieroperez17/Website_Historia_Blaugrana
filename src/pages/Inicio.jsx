@@ -116,7 +116,7 @@ export default function Inicio() {
                     </div>
                 ) : (
                     <>
-                        <h1 className="title-inicio-show" >Nuevos Ingresos</h1>
+                        <h1 className="title-inicio-show" >Nuevos <br className="salto"></br>Ingresos</h1>
                         <div className="container-club">
                             {Nuevos_Ingresos.map((producto) => (
                                 <ViewCardProduct key={producto.id} product={producto} />
