@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { CategoryCarousel } from "../components/CategoryCarousel.jsx";
 import { ThreeDot } from 'react-loading-indicators'
+import {FooterInfo} from "../components/FooterInfo.jsx";
+import './EstilosGenerales.css';
+
 
 export default function Inicio() {
     const [clubesData, setClubesData] = useState([]);
@@ -48,8 +51,8 @@ export default function Inicio() {
 
     return (
         <Layout>
-            <main style={styles.container}>
-                <img style={styles.imge} src="https://magical-horn-ed73f8415c.media.strapiapp.com/imagetest_19a734a241.jpg" alt="" />
+            <main style={styles.container} >
+                <img style={styles.imge} className="ImageInicioView" src="https://magical-horn-ed73f8415c.media.strapiapp.com/imagetest_19a734a241.jpg" alt="Imagen Inicio 1" />
                 { isLoading ? (
                     <div style={{ display: 'flex', gap:'2rem'  ,justifyContent: 'center', alignItems: 'center', height: '20vh' }}>
                         <ThreeDot variant="bounce" color="#4492C2" size="small" text="" textColor="" />
@@ -57,6 +60,7 @@ export default function Inicio() {
                 ) : (
                     <CategoryCarousel categories={clubesData.filter( club => club.tipo == 'Club')} />
                 )}
+                <FooterInfo />
             </main>
         </Layout>
         

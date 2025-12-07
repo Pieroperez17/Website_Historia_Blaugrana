@@ -66,4 +66,8 @@
             font-size: 14px;
         }
     }
+    .ImageInicioView{
+        height: 46vh;
+        object-fit: cover;
+    }
 }
