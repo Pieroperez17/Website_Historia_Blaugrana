@@ -238,7 +238,7 @@
 
 /* Sección de Información */
 .info-section {
-    background-color: #4492C2;
+    background-color: #20506d;
     padding: 40px 20px;
 }
 
@@ -268,19 +268,19 @@
 .info-icon svg {
     width: 40px;
     height: 40px;
-    color: #1f2937;
+    color: #ffffff;
 }
 
 .info-text h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #1f2937;
+    color: #ffffff;
     margin: 0 0 5px 0;
 }
 
 .info-text p {
     font-size: 14px;
-    color: #1f2937;
+    color: #ffffff;
     margin: 0;
     font-weight: 500;
 }
