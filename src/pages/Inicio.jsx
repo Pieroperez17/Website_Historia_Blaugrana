@@ -106,7 +106,7 @@ export default function Inicio() {
                     </div>
                 ) : (
                     <>
-                        <h1 style={{margin:'0px'}}>Clubes</h1>
+                        <h1 style={{margin:'20px 0px 0px 0px'}}  className="title-inicio-show" >Clubes</h1>
                         <CategoryCarousel categories={clubesData.filter( club => club.tipo == 'Club')} />
                     </>
                 )}
@@ -116,7 +116,7 @@ export default function Inicio() {
                     </div>
                 ) : (
                     <>
-                        <h1>Nuevos Ingresos</h1>
+                        <h1 className="title-inicio-show" >Nuevos Ingresos</h1>
                         <div className="container-club">
                             {Nuevos_Ingresos.map((producto) => (
                                 <ViewCardProduct key={producto.id} product={producto} />
@@ -144,4 +144,5 @@ const styles = {
     imge: {
         width: "100%",
     },
+
 };

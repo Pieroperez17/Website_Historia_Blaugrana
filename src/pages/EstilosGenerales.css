@@ -71,3 +71,10 @@
         object-fit: cover;
     }
 }
+
+.title-inicio-show{
+    font-size: 2.4rem;
+    text-align: left;
+    padding-left: 4rem;
+    text-decoration-line:overline;
+}
