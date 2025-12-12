@@ -4,6 +4,16 @@ import { useState } from 'react';
 export const ViewCardProduct = (Articulo) => {
     const [isHovered, setIsHovered] = useState(false);
     var item = Articulo.product;
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
+    React.useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const isMobile = windowWidth <= 600;
+
     const styles = {
         card: {
             backgroundColor: '#fff',
@@ -13,7 +23,7 @@ export const ViewCardProduct = (Articulo) => {
             transition: 'transform 0.3s ease, box-shadow 0.3s ease',
             cursor: 'pointer',
             width: '100%',
-            maxWidth: '320px',
+            maxWidth: isMobile ? '45%' : '320px',
             margin: '0'
         },
         cardHover: {
@@ -22,7 +32,7 @@ export const ViewCardProduct = (Articulo) => {
         },
         imageContainer: {
             width: '100%',
-            height: '350px',
+            height: isMobile ? '230px': '350px',
             overflow: 'hidden',
             backgroundColor: '#f5f5f5',
             position: 'relative'
@@ -39,22 +49,22 @@ export const ViewCardProduct = (Articulo) => {
             right: '12px',
             padding: '6px 12px',
             borderRadius: '20px',
-            fontSize: '12px',
+            fontSize: isMobile ? '10px':'12px',
             fontWeight: '600',
-            backgroundColor: item.stock > 0 ? '#10b981' : '#ef4444' ,
+            backgroundColor: item.stock > 0 ? '#10b981' : '#ef4444',
             color: '#fff'
         },
         content: {
-            padding: '16px'
+            padding: isMobile ? '6px':'16px'
         },
         nombre: {
-            fontSize: '18px',
+            fontSize: isMobile ? '18px':'18px',
             fontWeight: '600',
             color: '#1f2937',
             marginBottom: '8px',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'wrap'
         },
         detailsRow: {
             display: 'flex',
@@ -82,7 +92,7 @@ export const ViewCardProduct = (Articulo) => {
             alignItems: 'center'
         },
         precio: {
-            fontSize: '24px',
+            fontSize: isMobile ? '15px':'24px',
             fontWeight: '700',
             color: '#1f2937'
         },
@@ -90,7 +100,7 @@ export const ViewCardProduct = (Articulo) => {
             backgroundColor: '#3b82f6',
             color: '#fff',
             border: 'none',
-            padding: '8px 16px',
+            padding: isMobile ? '6px 14px':'8px 16px',
             borderRadius: '8px',
             fontSize: '14px',
             fontWeight: '600',

@@ -25,11 +25,11 @@ const BarraNavegacion = () => {
                             onChange={e => setBusqueda(e.target.value)}
                         />
                         <div className="aww">
-                            <div>
+                            <div id="account-icon">
                                 <LuUserRound size={30} color="#333" />
                                 <p>Mi Cuenta</p>
                             </div>
-                            <div>
+                            <div id="cart-icon">
                                 <LuShoppingCart  size={30} color="#333" />
                                 <p>Carrito</p>
                             </div>
