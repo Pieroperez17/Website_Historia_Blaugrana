@@ -13,7 +13,6 @@ export default function Clubes() {
 
         if (!baseUrl) {
             console.error("API base URL not found in environment variables.");
-            console.log("Current env vars:", baseUrl);
             return;
         }
         if (!apiAuth) {

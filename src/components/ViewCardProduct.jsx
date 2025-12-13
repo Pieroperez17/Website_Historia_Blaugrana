@@ -23,7 +23,7 @@ export const ViewCardProduct = (Articulo) => {
             transition: 'transform 0.3s ease, box-shadow 0.3s ease',
             cursor: 'pointer',
             width: '100%',
-            maxWidth: isMobile ? '45%' : '320px',
+            maxWidth: isMobile ? '100%' : '320px',
             margin: '0'
         },
         cardHover: {
@@ -117,7 +117,7 @@ export const ViewCardProduct = (Articulo) => {
         <div 
             style={{
                 ...styles.card,
-                ...(isHovered ? styles.cardHover : {})
+                ...(isHovered ? styles.cardHover : {}),
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

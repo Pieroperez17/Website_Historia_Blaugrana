@@ -6,6 +6,7 @@ import { LuUserRound } from "react-icons/lu";
 import { LuShoppingCart } from "react-icons/lu";
 import Image from './public/logo.png';
 import './index.css';
+import {FooterInfo} from "./components/FooterInfo.jsx";
 
 const BarraNavegacion = () => {
     const [open, setOpen] = useState(false);
@@ -131,7 +132,7 @@ const Layout = ({children}) => {
             <main className="main">
                 {children}
             </main>
-
+            <FooterInfo />
             <footer className="footer">
                 <div className="footer-content">
                     <p>

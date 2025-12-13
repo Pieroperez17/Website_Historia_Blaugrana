@@ -8,7 +8,7 @@ import Inicio from './pages/Inicio.jsx'
 import Clubes from './pages/Clubes.jsx'
 import Paises from './pages/Paises.jsx'
 import Contactanos from './pages/Contactanos.jsx'
-
+import PaginaArticulo from './pages/PaginaArticulo.jsx'
 
 function App() {
   
@@ -23,6 +23,7 @@ function App() {
           <Route path="/clubes" element={<Clubes/>} />
           <Route path="/paises" element={<Paises/>} />
           <Route path="/contactanos" element={<Contactanos/>} />
+          <Route path="/producto/:id" element={<PaginaArticulo/>} />
         </Routes>
       </Router>
     </>

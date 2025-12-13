@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import { ThreeDot } from 'react-loading-indicators'
 import {ViewCardProduct} from "../components/ViewCardProduct.jsx";
 import './EstilosGenerales.css';
+import { Link } from "react-router-dom";
+
+
 
 export default function NuevosIngresos() {
     const [NuevosIngresosData, setNuevosIngresosData] = useState([]);
@@ -14,7 +17,6 @@ export default function NuevosIngresos() {
     
             if (!baseUrl) {
                 console.error("API base URL not found in environment variables.");
-                console.log("Current env vars:", baseUrl);
                 return;
             }
             if (!apiAuth) {
@@ -36,7 +38,6 @@ export default function NuevosIngresos() {
                 // If the API returns an array use it directly, otherwise try common wrappers
                 setNuevosIngresosData(json.data);
                 setIsLoading(false);
-                console.log(json.data);
                 //console.log(json.data[0].imagenRef.url);
             } catch (err) {
                 if (err.name !== "AbortError") console.error("Error loading categories:", err);
@@ -57,7 +58,9 @@ export default function NuevosIngresos() {
             ) : (
                 <div className="container-club">
                     {Nuevos_Ingresos.map((producto) => (
-                        <ViewCardProduct key={producto.id} product={producto} />
+                        <Link to={`/producto/${producto.documentId}`} className="LinkSyleView" >
+                            <ViewCardProduct key={producto.id} product={producto} />
+                        </Link> 
                     ))}
                 </div>
             )}

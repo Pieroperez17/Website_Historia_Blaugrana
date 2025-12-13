@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { CategoryCarousel } from "../components/CategoryCarousel.jsx";
 import { ThreeDot } from 'react-loading-indicators'
-import {FooterInfo} from "../components/FooterInfo.jsx";
 import {ViewCardProduct} from "../components/ViewCardProduct.jsx";
-
+import { Link } from "react-router-dom";
 
 import './EstilosGenerales.css';
 
@@ -59,7 +58,6 @@ export default function Inicio() {
     
             if (!baseUrl) {
                 console.error("API base URL not found in environment variables.");
-                console.log("Current env vars:", baseUrl);
                 return;
             }
             if (!apiAuth) {
@@ -81,7 +79,6 @@ export default function Inicio() {
                 // If the API returns an array use it directly, otherwise try common wrappers
                 setNuevosIngresosData(json.data);
                 setIsLoading(false);
-                console.log(json.data);
                 //console.log(json.data[0].imagenRef.url);
             } catch (err) {
                 if (err.name !== "AbortError") console.error("Error loading categories:", err);
@@ -119,7 +116,9 @@ export default function Inicio() {
                         <h1 className="title-inicio-show" >Nuevos <br className="salto"></br>Ingresos</h1>
                         <div className="container-club">
                             {Nuevos_Ingresos.slice(0, 6).map((producto) => (
-                                <ViewCardProduct key={producto.id} product={producto} />
+                                <Link to={`/producto/${producto.documentId}`} className="LinkSyleView" >
+                                    <ViewCardProduct key={producto.id} product={producto} />
+                                </Link>
                             ))}
                         </div>
                     </>
@@ -127,7 +126,7 @@ export default function Inicio() {
                 )}
 
 
-                <FooterInfo />
+                
             </main>
         </Layout>
         

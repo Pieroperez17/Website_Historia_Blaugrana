@@ -81,8 +81,18 @@
 .salto{
     display: none;
 }
+
+
+.LinkSyleView{
+    text-decoration: none;
+}
+
 @media (max-width: 600px) {
     .salto{
         display: inline;
     }
+    .LinkSyleView{
+        width: 45%;
+    }
 }
+
