@@ -52,16 +52,19 @@ export default function Clubes() {
                     <ThreeDot variant="bounce" color="#4492C2" size="small" text="" textColor="" />
                 </div>
             ) : (
-                <div className="container-club">
-                    {clubesData.filter( club => club.tipo == 'Club' && true).map((club) => (
-                        <div key={club.id} className="card-club">
-                            <img src={club.imagenRef?.url} alt={club.imagenRef?.name} className="image-club" />
-                            <div className="info-club">
-                                <h2>{club.nombre}</h2>
+                <>
+                    <h1 className="title-inicio-show" >Clubes</h1>
+                    <div className="container-club">
+                        {clubesData.filter( club => club.tipo == 'Club' && true).map((club) => (
+                            <div key={club.id} className="card-club">
+                                <img src={club.imagenRef?.url} alt={club.imagenRef?.name} className="image-club" />
+                                <div className="info-club">
+                                    <h2>{club.nombre}</h2>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+                </>
             )}
             
         </Layout>

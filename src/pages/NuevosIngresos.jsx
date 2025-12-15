@@ -56,13 +56,16 @@ export default function NuevosIngresos() {
                     <ThreeDot variant="bounce" color="#4492C2" size="small" text="" textColor="" />
                 </div>
             ) : (
-                <div className="container-club">
-                    {Nuevos_Ingresos.map((producto) => (
-                        <Link to={`/producto/${producto.documentId}`} className="LinkSyleView" >
-                            <ViewCardProduct key={producto.id} product={producto} />
-                        </Link> 
-                    ))}
-                </div>
+                <>
+                    <h1 className="title-inicio-show" >Nuevos <br className="salto"></br>Ingresos</h1>
+                    <div className="container-club">
+                        {Nuevos_Ingresos.map((producto) => (
+                            <Link to={`/producto/${producto.documentId}`} className="LinkSyleView" >
+                                <ViewCardProduct key={producto.id} product={producto} />
+                            </Link> 
+                        ))}
+                    </div>
+                </>
             )}
             
         </Layout>
