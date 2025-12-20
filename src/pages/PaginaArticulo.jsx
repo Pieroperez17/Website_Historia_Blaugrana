@@ -11,6 +11,8 @@ import { FaWhatsapp } from "react-icons/fa";
 const MuestraProducto = ({product}) => {
     var categorias = product.categories;
     var imagesLista = product.imagen;
+
+    
     return (
         <article className="articulo-container">
             <div className="articulo-imagen">

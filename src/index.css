@@ -201,7 +201,10 @@ body {
   .main {
     padding-left: 0px;
   }
-
+  /*eliminar*/
+  .aww{
+      display: none;
+  }
 
 }
 

@@ -113,6 +113,8 @@ export const ViewCardProduct = (Articulo) => {
         }
     };
 
+    var imageurl= item.imagen && item.imagen[0]?.url ? item.imagen[0].url : "https://magical-horn-ed73f8415c.media.strapiapp.com/Not_Found_Image_20bccea143.png" ;
+
     return (
         <div 
             style={{
@@ -124,7 +126,7 @@ export const ViewCardProduct = (Articulo) => {
             >
             <div style={styles.imageContainer}>
                 <img 
-                src={item.imagen[0]?.formats?.medium?.url || item.imagen[0]?.url} 
+                src={imageurl} 
                 alt={item.nombre}
                 style={{
                     ...styles.image,

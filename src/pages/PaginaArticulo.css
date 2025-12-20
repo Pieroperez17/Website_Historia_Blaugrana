@@ -85,8 +85,17 @@
     background-color: #1d7913;
 }
 
+.articulo-categorias{
+    display: flex;
+    gap: 1rem;
+}
 
-
+.categoria-badge{
+    background-color: #202120;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 5px;
+}
 
 
 

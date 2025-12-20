@@ -8,6 +8,11 @@ export const ImagenContinua = (images) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const placeholderUrl = "https://magical-horn-ed73f8415c.media.strapiapp.com/Not_Found_Image_20bccea143.png";
     
+    // Validar que images sea un array válido
+    if (!Array.isArray(images) || images.length === 0) {
+        images = [{ url: placeholderUrl }];
+    }
+    
     // Si no hay imágenes, usar placeholder
     const displayImages = images.length > 0 ? images : [{ url: placeholderUrl }];
     const totalImages = displayImages.length;
