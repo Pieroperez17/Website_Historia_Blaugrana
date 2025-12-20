@@ -12,6 +12,13 @@ const MuestraProducto = ({product}) => {
     var categorias = product.categories;
     var imagesLista = product.imagen;
 
+    const handleWhatsAppClick = () => {
+        const mensaje = `Quiero comprar la ${product.nombre} en talla ${product.talla}`;
+        const numeroWhatsApp = "51908582191";
+        const mensajeEncodificado = encodeURIComponent(mensaje);
+        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeEncodificado}`;
+        window.open(urlWhatsApp, "_blank");
+    };
     
     return (
         <article className="articulo-container">
@@ -23,7 +30,7 @@ const MuestraProducto = ({product}) => {
                 <p className="articulo-meta">Stock: {product.stock > 0 ? `${product.stock} disponibles` : 'Agotado'}</p>
                 <p className="">S/ {product.precio?.toFixed(2)}</p>
                 <p className="articulo-talla">Talla: <span className='Butss'>{product.talla}</span></p>
-                <button className='button-buy'>
+                <button className='button-buy' onClick={handleWhatsAppClick}>
                     <FaWhatsapp />
                     Comprar por Whatsapp
                 </button>

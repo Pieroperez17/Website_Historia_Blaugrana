@@ -97,3 +97,68 @@
     }
 }
 
+
+.imgContactus{
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.texto-generico{
+    color: black;
+    text-align: left;
+    font-size: large;
+    padding-left: 4rem;
+    width: 60%;
+    ul{
+        display: flex;
+        gap: 8px;
+    }
+}
+li{list-style: none;}
+
+a{
+    text-decoration: none;
+    color: #32689F;
+}
+
+.padrrecontinain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:  0px auto;
+    flex-wrap: wrap;
+}
+
+.obss2{
+    width: 55%;
+}
+
+.btn-icon-redes{
+    background-color: black;
+    border: solid 2px rgba(0, 0, 0, 0);
+    margin-top: 20px;
+    padding: 4px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+@media (max-width: 600px) {
+    .imgContactus{
+        width: 70%;
+    }
+    .obss2{
+        width: 100%;
+    }
+    .texto-generico{
+        padding-left: 3rem;
+        width: 65%;
+    }
+}
+
+
+
