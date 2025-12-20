@@ -4,26 +4,27 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import { ThreeDot } from 'react-loading-indicators'
 import './PaginaArticulo.css';
+import { ImagenContinua } from '../components/ImagenContinua.jsx';
+import { FaWhatsapp } from "react-icons/fa";
 
 
 const MuestraProducto = ({product}) => {
-    var imagenUrl = product.imagen[0].formats.medium.url;
     var categorias = product.categories;
-
+    var imagesLista = product.imagen;
     return (
         <article className="articulo-container">
             <div className="articulo-imagen">
-                <img 
-                    src={imagenUrl} 
-                    alt={product.nombre}
-                    className="imagen-producto"
-                />
+                <ImagenContinua  images={imagesLista} />
             </div>
             <div className="articulo-contenido">
-                <h2 className="articulo-nombre">{product.nombre}</h2>
-                <p className="articulo-precio">Precio: S/ {product.precio?.toFixed(2)}</p>
-                <p className="articulo-talla">Talla: {product.talla}</p>
-                <p className="articulo-stock">Stock: {product.stock > 0 ? `${product.stock} disponibles` : 'Agotado'}</p>
+                <h2 className="articulo-titulo">{product.nombre}</h2>
+                <p className="articulo-meta">Stock: {product.stock > 0 ? `${product.stock} disponibles` : 'Agotado'}</p>
+                <p className="">S/ {product.precio?.toFixed(2)}</p>
+                <p className="articulo-talla">Talla: <span className='Butss'>{product.talla}</span></p>
+                <button className='button-buy'>
+                    <FaWhatsapp />
+                    Comprar por Whatsapp
+                </button>
                 <h3 className="articulo-descripcion-titulo">Descripción</h3>
                 <p className="articulo-descripcion">{product.descripcion}</p>
                 <h3 className="articulo-categorias-titulo">Categorías</h3>
