@@ -51,7 +51,7 @@ export const ViewCardProduct = (Articulo) => {
             borderRadius: '20px',
             fontSize: isMobile ? '10px':'12px',
             fontWeight: '600',
-            backgroundColor: item.stock > 0 ? '#10b981' : '#ef4444',
+            backgroundColor: item?.stock > 0 ? '#10b981' : '#ef4444',
             color: '#fff'
         },
         content: {
@@ -113,7 +113,7 @@ export const ViewCardProduct = (Articulo) => {
         }
     };
 
-    var imageurl= item.imagen && item.imagen[0]?.url ? item.imagen[0].url : "https://magical-horn-ed73f8415c.media.strapiapp.com/Not_Found_Image_20bccea143.png" ;
+    var imageurl= item?.imagen && item.imagen[0]?.url ? item.imagen[0].url : "https://magical-horn-ed73f8415c.media.strapiapp.com/Not_Found_Image_20bccea143.png" ;
 
     return (
         <div 
@@ -134,7 +134,7 @@ export const ViewCardProduct = (Articulo) => {
                 }}
                 />
                 <div style={styles.stockBadge}>
-                {item.stock > 0 ? `${item.stock} disponibles` : 'Agotado'}
+                {item?.stock > 0 ? `${item?.stock} disponibles` : 'Agotado'}
                 </div>
             </div>
             
@@ -143,7 +143,7 @@ export const ViewCardProduct = (Articulo) => {
                 
                 <div style={styles.detailsRow}>
                 <span style={styles.talla}>Talla: {item.talla}</span>
-                <span style={styles.stockText}>Stock: {item.stock}</span>
+                <span style={styles.stockText}>Stock: {item?.stock}</span>
                 </div>
                 
                 <div style={styles.priceContainer}>
@@ -151,17 +151,17 @@ export const ViewCardProduct = (Articulo) => {
                 <button 
                     style={{
                     ...styles.button,
-                    ...(item.stock === 0 ? styles.buttonDisabled : {})
+                    ...(item?.stock === 0 ? styles.buttonDisabled : {})
                     }}
                     disabled={item.stock === 0}
                     onMouseEnter={(e) => {
-                    if (item.stock > 0) e.target.style.backgroundColor = '#2563eb';
+                    if (item?.stock > 0) e.target.style.backgroundColor = '#2563eb';
                     }}
                     onMouseLeave={(e) => {
-                    if (item.stock > 0) e.target.style.backgroundColor = '#3b82f6';
+                    if (item?.stock > 0) e.target.style.backgroundColor = '#3b82f6';
                     }}
                 >
-                    {item.stock > 0 ? 'Agregar' : 'Agotado'}
+                    {item?.stock > 0 ? 'Agregar' : 'Agotado'}
                 </button>
                 </div>
             </div>

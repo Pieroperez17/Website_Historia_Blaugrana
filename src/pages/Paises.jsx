@@ -2,6 +2,7 @@ import Layout from "../Layout.jsx";
 import { useEffect, useState } from "react";
 import { ThreeDot } from 'react-loading-indicators'
 import './EstilosGenerales.css';
+import { Link } from "react-router-dom";
 
 
 export default function Paises() {
@@ -58,12 +59,12 @@ export default function Paises() {
                     <h1 className="title-inicio-show" >Paises</h1>
                     <div className="container-club">
                     {clubesData.filter( club => club.tipo == 'Pais').map((club) => (
-                        <div key={club.id} className="card-club">
+                        <Link key={club.id} className="card-club" to={`/productos/${club.nombre}`}>
                             <img src={club.imagenRef?.url} alt={club.imagenRef?.name} className="image-club" />
                             <div className="info-club">
                                 <h2>{club.nombre}</h2>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
                 </>

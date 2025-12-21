@@ -11,42 +11,42 @@ export default function NuevosIngresos() {
     const [NuevosIngresosData, setNuevosIngresosData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     
-        useEffect(() => {
-            const baseUrl = import.meta.env.VITE_API_Url ;
-            const apiAuth = import.meta.env.VITE_API_Authorization ;
-    
-            if (!baseUrl) {
-                console.error("API base URL not found in environment variables.");
-                return;
-            }
-            if (!apiAuth) {
-                console.error("API authorization token not found in environment variables.");
-                return;
-            }
-    
-    
-        async function fetchCategories() {
-            try {
-                const res = await fetch(`${baseUrl}/api/products?populate=*`, {
-                    method: "GET",
-                    headers: {
-                        ...(apiAuth ? { Authorization: apiAuth } : {}),
-                    },
-                });
-                if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
-                const json = await res.json();
-                // If the API returns an array use it directly, otherwise try common wrappers
-                setNuevosIngresosData(json.data);
-                setIsLoading(false);
-                //console.log(json.data[0].imagenRef.url);
-            } catch (err) {
-                if (err.name !== "AbortError") console.error("Error loading categories:", err);
-            }
+    useEffect(() => {
+        const baseUrl = import.meta.env.VITE_API_Url ;
+        const apiAuth = import.meta.env.VITE_API_Authorization ;
+
+        if (!baseUrl) {
+            console.error("API base URL not found in environment variables.");
+            return;
         }
+        if (!apiAuth) {
+            console.error("API authorization token not found in environment variables.");
+            return;
+        }
+
+
+    async function fetchCategories() {
+        try {
+            const res = await fetch(`${baseUrl}/api/products?populate=*`, {
+                method: "GET",
+                headers: {
+                    ...(apiAuth ? { Authorization: apiAuth } : {}),
+                },
+            });
+            if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
+            const json = await res.json();
+            // If the API returns an array use it directly, otherwise try common wrappers
+            setNuevosIngresosData(json.data);
+            setIsLoading(false);
+            //console.log(json.data[0].imagenRef.url);
+        } catch (err) {
+            if (err.name !== "AbortError") console.error("Error loading categories:", err);
+        }
+    }
     
-        fetchCategories();
-        return;
-        }, []);
+    fetchCategories();
+    return;
+    }, []);
     
     const Nuevos_Ingresos = NuevosIngresosData.filter(producto => producto.categories.some(cat => cat.nombre === "Nuevo Ingreso") )
     return (

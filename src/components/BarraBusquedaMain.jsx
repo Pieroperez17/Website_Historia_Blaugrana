@@ -9,7 +9,9 @@ function SimpleSearchBar() {
     };
 
     const handleSearch = () => {
-        console.log('Valor ingresado:', inputValue);
+        if (inputValue.trim()) {
+            window.location.href = `/productos/${encodeURIComponent(inputValue)}`;
+        }
     };
 
 
