@@ -16,6 +16,12 @@ function SimpleSearchBar() {
 
 
 
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     return (
         <div style={{
             display: 'flex',
@@ -31,6 +37,7 @@ function SimpleSearchBar() {
                 placeholder="Buscar producto o información"
                 value={inputValue}
                 onChange={handleInputChange}
+                onKeyPress={handleKeyPress}
                 style={{
                     flex: 1,
                     border: 'none',
