@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom'; 
 import './EstilosGenerales.css';
 
+
 function busquedaFlexible(texto, busqueda) {
     // Convertir ambos a minúsculas
     const textoNormalizado = texto.toLowerCase();
@@ -94,7 +95,7 @@ export default function PaginaVistaProductos(){
                                     width:'30vw',
                                     filter: 'grayscale(100%)'
                                 }}
-                                src="../src/public/logo.png" alt="NotFound" 
+                                src='https://magical-horn-ed73f8415c.media.strapiapp.com/logo_613890f082.png' alt="NotFound" 
                                 />
                                 <h3 style={{color : 'gray', fontSize: '2rem'}}>No encontramos resultados :(</h3>
                             </div>
