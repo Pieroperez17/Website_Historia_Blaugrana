@@ -43,6 +43,12 @@
 .articulo-contenido p {
     margin-bottom: 15px;
 }
+
+.articulo-descripcion {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 .imagen-producto {
     width: 100%;
     height: auto;
