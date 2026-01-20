@@ -90,13 +90,6 @@ export default function PaginaVistaProductos(){
                                     flexDirection: 'column'
                                 }}
                             >
-                                <img
-                                style={{
-                                    width:'30vw',
-                                    filter: 'grayscale(100%)'
-                                }}
-                                src='https://magical-horn-ed73f8415c.media.strapiapp.com/logo_613890f082.png' alt="NotFound" 
-                                />
                                 <h3 style={{color : 'gray', fontSize: '2rem'}}>No encontramos resultados :(</h3>
                             </div>
                         }

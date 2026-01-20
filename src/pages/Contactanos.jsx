@@ -5,7 +5,7 @@ export default function Contactanos() {
     return (
         <Layout>
             <div className="padrrecontinain">
-                <img src="https://magical-horn-ed73f8415c.media.strapiapp.com/07151258c630ebfcee9d361a8b48265b_ae1f71733d.jpg" className="imgContactus" alt="Amor por las camisetas" />
+                <img src="https://res.cloudinary.com/ds4u9u1zv/image/upload/v1768947252/48bcb482_3780_4c33_86bc_4a51b96a5450_5be7614b65.jpg" className="imgContactus" alt="Amor por las camisetas" />
                 <div className="obss2">
                     <h1 className="title-inicio-show" >Contáctanos</h1>
                         <p className="texto-generico" >
@@ -20,7 +20,7 @@ export default function Contactanos() {
                         </ul>
                     </p>
                     <p className="texto-generico" >
-                        Nuestro equipo está disponible para ayudarte de lunes a viernes, de 9:00 a 18:00 horas.
+                        Nuestro equipo está disponible para ayudarte de lunes a domingo las 24 horas del dia.
                     </p>
                     <p className="texto-generico" >
                         ¡Esperamos saber de ti pronto!

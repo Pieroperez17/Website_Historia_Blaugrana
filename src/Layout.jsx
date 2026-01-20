@@ -15,7 +15,7 @@ const BarraNavegacion = () => {
     return (
         <header className="navbar">
             <div className="navbar-container">
-                <div className="Texto-info">🚚📦 Envíos GRATIS en todo Lima desde S/.500 💰 💳</div>
+                <div className="Texto-info">🚚📦 Envíos a todo el Peru 🚚📦</div>
                 <div className="navbar-content">
                     <div className="navbar-hd">
                         <Link to={'/'}><img  src={Image} alt="Logo Historia Blaugrana" className="logo-image" /></Link>

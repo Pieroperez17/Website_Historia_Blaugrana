@@ -76,7 +76,7 @@ export const FooterInfo = () => {
                         </div>
                         <div className="info-text">
                             <h3>Envíos en 72hrs</h3>
-                            <p>Provincia por Olva Courier</p>
+                            <p>Provincia por Couriers</p>
                         </div>
                     </div>
 
