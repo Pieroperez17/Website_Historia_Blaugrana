@@ -65,6 +65,7 @@ export const CategoryCarousel = ({ categories }) => {
         startAutoScroll();
         return () => stopAutoScroll();
     }, [currentIndex, categories.length, itemsPerView]);
+    
 
     return (
         <div className="carousel-container">
@@ -97,7 +98,7 @@ export const CategoryCarousel = ({ categories }) => {
                         >
                             <div className={`image-container ${hoveredIndex === index ? 'image-container-hover' : ''}`}>
                                 <img
-                                    src={category?.imagenRef?.formats?.medium?.url}
+                                    src={category?.imagenRef?.formats?.medium?.url || category.imagenRef.url}
                                     alt={category.nombre}
                                     className="category-image"
                                 />
