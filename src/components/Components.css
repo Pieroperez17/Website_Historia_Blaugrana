@@ -34,7 +34,7 @@
 .image-container {
     width: 100%;
     aspect-ratio: 1;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     display: flex;
     align-items: center;
     justify-content: center;
