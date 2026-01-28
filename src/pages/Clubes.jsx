@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import  categorias  from "../data/Categoria.js";
 
 export default function Clubes() {
-    
-
     return (
         <Layout>
             <>
