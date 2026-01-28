@@ -475,7 +475,7 @@ const products = [
         descripcion: "🔗 CAMISETA FC BARCELONA LOCAL NIKE ORIGINAL TEMPORADA 2016 / 2017\n\nTALLA : S ADULTOS\n\nMEDIDAS AL DM 📥\n\n💲PRECIO : 89 SOLES\n✔️ESTADO : 8.5/10 DETALLE DORSAL\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
         stock: "1",
         talla: "S",
-        precio: 60,
+        precio: 89,
         imagen: [
             { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769578167/producto17_4_rrpyh8.jpg" },
             { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769578161/producto17_2_keyghg.jpg" },
