@@ -178,8 +178,99 @@ const categorias = [
             }
         },
         url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/mexico.jpg"
-    }
+    },
 ];
-
+categorias.push(
+    {
+        id: 11,
+        documentId: "paislatino123abc456def",
+        nombre: "CONMEBOL",
+        descripcion: null,
+        tipo: "Pais",
+        imagenRef: {
+            id: 11,
+            documentId: "imglatino123abc",
+            name: "conmebol.png",
+            formats: {
+                large: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/conmebol.jpg" },
+                medium: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/conmebol.jpg" },
+                small: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/conmebol.jpg" }
+            }
+        },
+        url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/conmebol.jpg"
+    },
+    {
+        id: 12,
+        documentId: "paisonoropa456ghi789jkl",
+        nombre: "UEFA",
+        descripcion: null,
+        tipo: "Pais",
+        imagenRef: {
+            id: 12,
+            documentId: "imgeuropa456ghi",
+            name: "uefa.png",
+            formats: {
+                large: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/uefa.jpg" },
+                medium: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/uefa.jpg" },
+                small: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/uefa.jpg" }
+            }
+        },
+        url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/uefa.jpg"
+    },
+    {
+        id: 13,
+        documentId: "paisafrica789mno012pqr",
+        nombre: "CAF",
+        descripcion: null,
+        tipo: "Pais",
+        imagenRef: {
+            id: 13,
+            documentId: "imgafrica789mno",
+            name: "caf.png",
+            formats: {
+                large: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/caf.jpg" },
+                medium: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/caf.jpg" },
+                small: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/caf.jpg" }
+            }
+        },
+        url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/caf.jpg"
+    },
+    {
+        id: 14,
+        documentId: "paisasia012stu345vwx",
+        nombre: "AFC",
+        descripcion: null,
+        tipo: "Pais",
+        imagenRef: {
+            id: 14,
+            documentId: "imgasia012stu",
+            name: "afc.png",
+            formats: {
+                large: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/asian.jpg" },
+                medium: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/asian.jpg" },
+                small: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/asian.jpg" }
+            }
+        },
+        url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/asian.jpg"
+    },
+    {
+        id: 15,
+        documentId: "paisoceania345yz012abc",
+        nombre: "OFC",
+        descripcion: null,
+        tipo: "Pais",
+        imagenRef: {
+            id: 15,
+            documentId: "imgoceania345yz",
+            name: "ofc.png",
+            formats: {
+                large: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/ofc.jpg" },
+                medium: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/ofc.jpg" },
+                small: { url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/ofc.jpg" }
+            }
+        },
+        url: "https://paladarnegro.net/escudoteca/confederaciones/confederaciones/img/ofc.jpg"
+    }
+);
 
 export default categorias;

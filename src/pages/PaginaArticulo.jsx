@@ -1,12 +1,9 @@
 import { useParams } from 'react-router-dom';
 import Layout from '../Layout.jsx';
-import React from 'react';
-import { useEffect, useState } from "react";
-import { ThreeDot } from 'react-loading-indicators'
 import './PaginaArticulo.css';
 import { ImagenContinua } from '../components/ImagenContinua.jsx';
 import { FaWhatsapp } from "react-icons/fa";
-
+import products from "../data/Products.js";
 
 const MuestraProducto = ({product}) => {
     var categorias = product.categories;
@@ -52,53 +49,10 @@ const MuestraProducto = ({product}) => {
 
 export default function PaginaArticulo(){
     const { id } = useParams();
-    const [Product, setProduct] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-        
-        useEffect(() => {
-            const baseUrl = import.meta.env.VITE_API_Url ;
-            const apiAuth = import.meta.env.VITE_API_Authorization ;
-    
-            if (!baseUrl) {
-                console.error("API base URL not found in environment variables.");
-                return;
-            }
-            if (!apiAuth) {
-                console.error("API authorization token not found in environment variables.");
-                return;
-            }
-        
-        
-            async function fetchCategories() {
-                try {
-                    const res = await fetch(`${baseUrl}/api/products/${id}?populate=*`, {
-                        method: "GET",
-                        headers: {
-                            ...(apiAuth ? { Authorization: apiAuth } : {}),
-                        },
-                    });
-                    if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
-                    const json = await res.json();
-                    // If the API returns an array use it directly, otherwise try common wrappers
-                    setProduct(json.data);
-                    setIsLoading(false);
-                } catch (err) {
-                    if (err.name !== "AbortError") console.error("Error loading categories:", err);
-                }
-            }
-        
-            fetchCategories();
-            return;
-            }, [id]);
+    const Product = products.find(producto => producto.documentId === id );
     return (
         <Layout>
-            {isLoading ? (
-                <div style={{ display: 'flex', gap:'2rem'  ,justifyContent: 'center', alignItems: 'center', height: '20vh' }}>
-                    <ThreeDot variant="bounce" color="#4492C2" size="small" text="" textColor="" />
-                </div>
-            ) : (
-                <MuestraProducto product={Product} />
-            )}
+            <MuestraProducto product={Product} />
         </Layout>
     )
 };
