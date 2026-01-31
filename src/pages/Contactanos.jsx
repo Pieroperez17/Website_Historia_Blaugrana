@@ -5,7 +5,7 @@ export default function Contactanos() {
     return (
         <Layout>
             <div className="padrrecontinain">
-                <img src="https://res.cloudinary.com/ds4u9u1zv/image/upload/v1768947252/48bcb482_3780_4c33_86bc_4a51b96a5450_5be7614b65.jpg" className="imgContactus" alt="Amor por las camisetas" />
+                <img src="https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769888787/contactus_mr0d3b.jpg" className="imgContactus" alt="Amor por las camisetas" />
                 <div className="obss2">
                     <h1 className="title-inicio-show" >Contáctanos</h1>
                         <p className="texto-generico" >
