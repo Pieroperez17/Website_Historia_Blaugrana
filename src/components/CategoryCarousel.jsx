@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Components.css';
+import { Link } from 'react-router-dom';
 
 export const CategoryCarousel = ({ categories }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,7 +88,7 @@ export const CategoryCarousel = ({ categories }) => {
                     }}
                 >
                     {categories.map((category, index) => (
-                        <div
+                        <Link
                             key={index}
                             className="category-item"
                             style={{
@@ -95,6 +96,7 @@ export const CategoryCarousel = ({ categories }) => {
                             }}
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
+                            to={`/productos/${category.nombre}`}
                         >
                             <div className={`image-container ${hoveredIndex === index ? 'image-container-hover' : ''}`}>
                                 <img
@@ -104,7 +106,7 @@ export const CategoryCarousel = ({ categories }) => {
                                 />
                             </div>
                             <p className="category-name">{category.nombre}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

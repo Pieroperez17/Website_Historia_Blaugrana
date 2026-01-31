@@ -85,7 +85,6 @@ const products = [
             },
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" },
         ]
@@ -108,7 +107,6 @@ const products = [
             { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769568120/producto2-7_rbbgqh.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -136,7 +134,6 @@ const products = [
             { id: 12, name: "img12", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769569508/producto3_14_mdww7v.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -160,7 +157,6 @@ const products = [
             { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769570053/producto4_4_tjdo5x.jpg" },
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -184,7 +180,6 @@ const products = [
             { id: 9, name: "img9", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769571401/producto5_9_yybl6l.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -212,7 +207,6 @@ const products = [
             { id: 12, name: "img12", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769571964/producto6_11_hlad5i.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -241,7 +235,6 @@ const products = [
             { id: 13, name: "img13", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769572534/producto7_7_na12wc.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -268,7 +261,6 @@ const products = [
             { id: 11, name: "img11", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769572559/producto8_1_yyrkak.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -292,7 +284,6 @@ const products = [
             { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769574955/producto9_1_uhw8xi.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -316,7 +307,6 @@ const products = [
             { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769575162/producto10_1_q23b9h.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -340,7 +330,6 @@ const products = [
             { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769576188/producto11_5_gta0co.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -365,7 +354,6 @@ const products = [
             { id: 9, name: "img9", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769576208/producto12_9_t7xwtz.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -392,7 +380,6 @@ const products = [
             { id: 11, name: "img11", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769577008/producto13_6_c5sobe.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -415,7 +402,6 @@ const products = [
             { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769577048/producto14_10_vfv2ui.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -439,7 +425,6 @@ const products = [
             { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769577372/producto15_2_tfb4bd.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -463,7 +448,6 @@ const products = [
             { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769577379/producto16_3_tj4kuu.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
@@ -475,7 +459,7 @@ const products = [
         descripcion: "🔗 CAMISETA FC BARCELONA LOCAL NIKE ORIGINAL TEMPORADA 2016 / 2017\n\nTALLA : S ADULTOS\n\nMEDIDAS AL DM 📥\n\n💲PRECIO : 89 SOLES\n✔️ESTADO : 8.5/10 DETALLE DORSAL\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
         stock: "1",
         talla: "S",
-        precio: 89,
+        precio: 89, 
         imagen: [
             { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769578167/producto17_4_rrpyh8.jpg" },
             { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769578161/producto17_2_keyghg.jpg" },
@@ -485,48 +469,209 @@ const products = [
             { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769578157/producto17_7_bsz4mn.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "UEFA" },
             { id: 2, nombre: "LaLiga" },
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
     },
-    // {
-    //     id: 18,
-    //     documentId: "p9o8i7u6y5t4r3e2w1q0",
-    //     nombre: "POSTER ENMARCADO EDICIÓN LIMITADA",
-    //     descripcion: "Poster enmarcado edición limitada, perfecto para pared.",
-    //     stock: "2",
-    //     talla: "",
-    //     precio: 120,
-    //     imagen: [
-    //         { id: 1, name: "img1", url: "" },
-    //         { id: 2, name: "img2", url: "" },
-    //         { id: 3, name: "img3", url: "" }
-    //     ],
-    //     categories: [
-    //         { id: 1, nombre: "UEFA" },
-    //         { id: 2, nombre: "LaLiga" },
-    //         { id: 3, nombre: "Nuevo Ingreso" }
-    //     ]
-    // },
-    // {
-    //     id: 19,
-    //     documentId: "m1n2b3v4c5x6z7a8s9d0",
-    //     nombre: "TARJETA AUTOGRAFIADA",
-    //     descripcion: "Tarjeta firmada por exjugador, autenticidad comprobada.",
-    //     stock: "1",
-    //     talla: "",
-    //     precio: 350,
-    //     imagen: [
-    //         { id: 1, name: "img1", url: "" },
-    //         { id: 2, name: "img2", url: "" },
-    //         { id: 3, name: "img3", url: "" }
-    //     ],
-    //     categories: [
-    //         { id: 1, nombre: "UEFA" },
-    //         { id: 2, nombre: "LaLiga" },
-    //         { id: 3, nombre: "Nuevo Ingreso" }
-    //     ]
-    // }
+    {
+        id: 18,
+        documentId: "p9o8i7u6y5t4r3e2w1q0",
+        nombre: "CAMISERO INGLATERRA UMBRO ORIGINAL",
+        descripcion: "🔗 CAMISERO INGLATERRA UMBRO ORIGINAL\n\nTALLA : M ADULTOS\n\n💲PRECIO : 90 SOLES\n\n✔️ESTADO : 9/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "M",
+        precio: 90,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_2_liavly.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_4_tok58h.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_3_slhhed.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_5_yovs4u.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_6_sfndxa.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_7_ew7see.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769881974/producto18_1_cacctk.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "UEFA" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 19,
+        documentId: "m1n2b3v4c5x6z7a8s9d0",
+        nombre: "CAMISERO ESPAÑA ADIDAS ORIGINAL TEMPORADA 2012",
+        descripcion: "🔗 CAMISERO ESPAÑA ADIDAS ORIGINAL TEMPORADA 2012\n\nTALLA : S GRANDE FIT M\n\n💲PRECIO : 90 SOLES\n\n✔️ESTADO : 9/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "S",
+        precio: 90,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882446/producto20_4_oihgho.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882447/producto20_8_ieieoc.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882445/producto20_9_dkog2s.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882445/producto20_10_japnke.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882446/producto20_1_pkhfpc.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882447/producto20_6_scpzeu.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769882446/producto20_5_embykz.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "UEFA" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 20,
+        documentId: "h3i4j5k6l7m8n9o0p1q2",
+        nombre: "CAMISETA ESPAÑA LOCAL ADIDAS ORIGINAL TEMPORADA EURO 2016",
+        descripcion: "🔗 CAMISETA ESPAÑA LOCAL ADIDAS ORIGINAL TEMPORADA EURO 2016\n\nTALLA : L ADULTOS\n\nMEDIDAS AL DM 📥\n💲PRECIO : 120 SOLES NEGOCIABLE\n\n✔️ESTADO : 9/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "L",
+        precio: 120,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883624/producto21_7_bkfklv.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883620/producto21_3_thu8ry.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883619/producto21_2_neqilm.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883623/producto21_6_geguzo.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883625/producto21_8_nwvmk3.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883625/producto21_9_f4czss.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883622/producto21_5_c5r3nl.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883621/producto21_4_brxmjn.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "UEFA" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 21,
+        documentId: "r5s6t7u8v9w0x1y2z3a4",
+        nombre: "CAMISETA ARGENTINA ORIGINAL TEMPORADA MUNDIAL 2014",
+        descripcion: "🔗 CAMISETA ARGENTINA ORIGINAL TEMPORADA MUNDIAL 2014\n\nTALLA : S ADULTOS\n\nMEDIDAS AL DM 📥\n\n💲PRECIO : 150 SOLES\n✔️ESTADO : 9.5 / 10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "S",
+        precio: 150,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883633/producto22_9_jt0xfw.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883626/producto22_1_cl9yds.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883632/producto22_7_p3clhe.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883632/producto22_8_vftcnl.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883631/producto22_6_r33kdt.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883630/producto22_5_avrt3y.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883629/producto22_4_njqsky.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883627/producto22_2_nxvosg.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "CONMEBOL" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 22,
+        documentId: "b7c8d9e0f1g2h3i4j5k6",
+        nombre: "CAMISETA ARGENTINA LOCAL ADIDAS ORIGINAL TEMPORADA 2019",
+        descripcion: "🔗 CAMISETA ARGENTINA LOCAL ADIDAS ORIGINAL TEMPORADA 2019\nTALLA : S ADULTOS FIT M\nMEDIDAS AL DM 📥\n💲PRECIO : 100 SOLES\n✔️ESTADO : 9.5/10 SIN DETALLES\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERU",
+        stock: "1",
+        talla: "S",
+        precio: 100,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883248/producto23_4_hz9q3i.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883246/producto23_2_xgiaqa.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883247/producto23_3_ygrxic.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883249/producto23_5_vl5j4v.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883246/producto23_1_ib8wsu.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "CONMEBOL" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 23,
+        documentId: "l9m0n1o2p3q4r5s6t7u8",
+        nombre: "CAMISETA ALEMANIA LOCAL ADIDAS ORIGINAL 2018",
+        descripcion: "🔗 CAMISETA ALEMANIA LOCAL ADIDAS ORIGINAL 2018\n\nTALLA : M ADULTOS\n\n💲PRECIO : 190\n\n✔️ESTADO : 9/10 NO PRESENTA DETALLES\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "M",
+        precio: 190,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883254/producto24_10_adzby5.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883250/producto24_1_syytuz.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883254/producto24_2_looj5d.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883257/producto24_5_jcenqf.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883259/producto24_4_zxilva.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883259/producto24_6_fyzcy5.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883262/producto24_9_d0fdlx.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "UEFA" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 24,
+        documentId: "v9w0x1y2z3a4b5c6d7e8",
+        nombre: "CASACA ADIDAS SELECCIÓN ESPAÑOLA",
+        descripcion: "🔗 CASACA ADIDAS SELECCIÓN ESPAÑOLA \n\nTALLA : 16\n\n💲PRECIO : 70 NEGOCIABLE\n\n✔️ESTADO : 9/10 FUNCIONAN SUS CIERRES A LA PERFECCIÓN\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "16",
+        precio: 70,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883607/producto25_8_qedd1s.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883266/producto25_4_d8fcx5.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883265/producto25_7_jhw7fy.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883267/producto25_5_k2dwp0.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883582/producto25_9_tmqchf.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883588/producto25_6_ccz5y7.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883265/producto25_3_yqtkc3.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "UEFA" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 25,
+        documentId: "f1g2h3i4j5k6l7m8n9o0",
+        nombre: "CAMISETA UNIVERSITARIO DE DEPORTES ORIGINAL TEMPORADA 2018",
+        descripcion: "🔗 CAMISETA UNIVERSITARIO DE DEPORTES ORIGINAL TEMPORADA 2018\n\nTALLA : S ADULTOS\n\n💲PRECIO : 90 SOLES\n\n✔️ESTADO : NUEVA CON ETIQUETAS\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "S",
+        precio: 90,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883607/producto26_2_apique.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883611/producto26_7_htfgja.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883609/producto26_3_qfcrnc.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883610/producto26_8_pybc4a.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883610/producto26_9_nb1ox4.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883270/producto26_6_ljwfrh.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883608/producto26_1_qyhpfr.jpg" }
+        ],
+        categories: [
+            { id: 1, nombre: "CONMEBOL"},
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 26,
+        documentId: "n2o3p4q5r6s7t8u9v0w1",
+        nombre: "CAMISETA MANCHESTER UNITED TEMPORADA 2016 ADIDAS ORIGINAL",
+        descripcion: "🔗 CAMISETA MANCHESTER UNITED TEMPORADA 2016 ADIDAS ORIGINAL\nTALLA : S ADULTOS GRANDE FIT M\nMEDIDAS AL DM 📥\n💲PRECIO : 120 SOLES\n✔️ESTADO : 9/10 EL SPONSOR , PARCHES EN BUEN ESTADO\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERU",
+        stock: "1",
+        talla: "S",
+        precio: 120,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883616/producto27_7_ugp5it.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883255/producto27_12_hymfj7.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883255/producto27_2_afphfm.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883614/producto27_5_mcxpvz.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883613/producto27_4_fzhrpv.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883250/producto27_10_gmmxoo.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883617/producto27_8_q95b06.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883618/producto27_9_qzfdym.jpg" },
+            { id: 9, name: "img9", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883612/producto27_3_oii306.jpg" }
+        ],
+        categories: [
+            { id: 4, nombre: "Premier League" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
 ];
 export default products;
