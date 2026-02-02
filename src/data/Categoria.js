@@ -18,24 +18,6 @@ const categorias = [
             url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/alemania.jpg",
     },
     {
-        id: 2,
-        documentId: "a1b2c3d4e5f6g7h8i9j0k12",
-        nombre: "Primera División",
-        descripcion: null,
-        tipo: "Club",
-        imagenRef: {
-            id: 2,
-            documentId: "m1n2o3p4q5r6s7t8u9v0w12",
-            name: "argentina.png",
-            formats: {
-                large: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/argentina.jpg" },
-                medium: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/argentina.jpg" },
-                small: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/argentina.jpg" }
-            }
-        },
-        url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/argentina.jpg"
-    },
-    {
         id: 3,
         documentId: "z9y8x7w6v5u4t3s2r1q0p12",
         nombre: "Liga 1",
@@ -52,24 +34,6 @@ const categorias = [
             }
         },
         url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/peru.jpg"
-    },
-    {
-        id: 4,
-        documentId: "o1p2q3r4s5t6u7v8w9x0y12",
-        nombre: "Brasileirao",
-        descripcion: null,
-        tipo: "Club",
-        imagenRef: {
-            id: 4,
-            documentId: "c1d2e3f4g5h6i7j8k9l0m12",
-            name: "brasil.png",
-            formats: {
-                large: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/brasil.jpg" },
-                medium: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/brasil.jpg" },
-                small: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/brasil.jpg" }
-            }
-        },
-        url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/brasil.jpg"
     },
     {
         id: 5,
@@ -124,61 +88,7 @@ const categorias = [
             }
         },
         url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/italia.jpg"
-    },
-    {
-        id: 8,
-        documentId: "i1j2k3l4m5n6o7p8q9r0s12",
-        nombre: "Ligue 1",
-        descripcion: null,
-        tipo: "Club",
-        imagenRef: {
-            id: 8,
-            documentId: "t1u2v3w4x5y6z7a8b9c0d12",
-            name: "francia.png",
-            formats: {
-                large: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/francia.jpg" },
-                medium: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/francia.jpg" },
-                small: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/francia.jpg" }
-            }
-        },
-        url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/francia.jpg"
-    },
-    {
-        id: 9,
-        documentId: "j1k2l3m4n5o6p7q8r9s0t12",
-        nombre: "Primeira Liga",
-        descripcion: null,
-        tipo: "Club",
-        imagenRef: {
-            id: 9,
-            documentId: "u1v2w3x4y5z6a7b8c9d0e12",
-            name: "portugal.png",
-            formats: {
-                large: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/portugal.jpg" },
-                medium: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/portugal.jpg" },
-                small: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/portugal.jpg" }
-            }
-        },
-        url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/portugal.jpg"
-    },
-    {
-        id: 10,
-        documentId: "k1l2m3n4o5p6q7r8s9t0u12",
-        nombre: "Liga MX",
-        descripcion: null,
-        tipo: "Club",
-        imagenRef: {
-            id: 10,
-            documentId: "v1w2x3y4z5a6b7c8d9e0f12",
-            name: "mexico.png",
-            formats: {
-                large: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/mexico.jpg" },
-                medium: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/mexico.jpg" },
-                small: { url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/mexico.jpg" }
-            }
-        },
-        url: "https://paladarnegro.net/escudoteca/ligas/ligas/img/mexico.jpg"
-    },
+    }
 ];
 categorias.push(
     {

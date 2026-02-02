@@ -645,7 +645,7 @@ const products = [
             { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1769883608/producto26_1_qyhpfr.jpg" }
         ],
         categories: [
-            { id: 1, nombre: "CONMEBOL"},
+            { id: 1, nombre: "Liga 1"},
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
     },
@@ -673,5 +673,275 @@ const products = [
             { id: 3, nombre: "Nuevo Ingreso" }
         ]
     },
+    {
+        id: 27,
+        documentId: "x3y4z5a6b7c8d9e0f1g2",
+        nombre: "CAMISETA UNIVERSITARIO DE DEPORTES ORIGINAL TEMPORADA 2018",
+        descripcion: "🔗 CAMISETA UNIVERSITARIO DE DEPORTES ORIGINAL TEMPORADA 2018\n\nTALLA : S ADULTOS\n\n💲PRECIO : 90 SOLES\n\n✔️ESTADO : NUEVA CON ETIQUETAS\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "S",
+        precio: 90,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009965/WhatsApp_Image_2026-02-01_at_8.11.47_PM_xo8vln.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009966/WhatsApp_Image_2026-02-01_at_8.11.54_PM_2_pmoais.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009966/WhatsApp_Image_2026-02-01_at_8.11.50_PM_ufexmk.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009973/WhatsApp_Image_2026-02-01_at_8.11.54_PM_3_zml3ns.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009966/WhatsApp_Image_2026-02-01_at_8.11.53_PM_1_mj2nuu.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009966/WhatsApp_Image_2026-02-01_at_8.11.54_PM_1_ltcsik.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009966/WhatsApp_Image_2026-02-01_at_8.11.53_PM_2_o4bri2.jpg" }        ],
+        categories: [
+            { id: 4, nombre: "Liga 1" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 28,
+        documentId: "h4i5j6k7l8m9n0o1p2q3",
+        nombre: "CAMISETA JUVENTUS LOCAL NIKE ORIGINAL TEMPORADA 2011",
+        descripcion: "🔗 CAMISETA JUVENTUS LOCAL NIKE ORIGINAL TEMPORADA 2011\n\nTALLA : M ADULTOS\n\nMEDIDAS AL DM 📥\n\n💲PRECIO : 170 SOLES NEGOCIABLE\n✔️ESTADO : 9/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "M",
+        precio: 170,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009977/WhatsApp_Image_2026-02-01_at_8.13.26_PM_1_u1ghyq.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009974/WhatsApp_Image_2026-02-01_at_8.13.25_PM_3_nzfeje.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009978/WhatsApp_Image_2026-02-01_at_8.13.26_PM_2_hsszwh.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009979/WhatsApp_Image_2026-02-01_at_8.13.26_PM_4_jouvcs.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009979/WhatsApp_Image_2026-02-01_at_8.13.26_PM_soeslo.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009974/WhatsApp_Image_2026-02-01_at_8.13.25_PM_1_zzcqki.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009975/WhatsApp_Image_2026-02-01_at_8.13.25_PM_xsbh8m.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009980/WhatsApp_Image_2026-02-01_at_8.13.27_PM_zqv3j3.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Serie A" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 29,
+        documentId: "r6s7t8u9v0w1x2y3z4a5",
+        nombre: "CAMISETA MANCHESTER UNITED ORIGINAL",
+        descripcion: "🔗 CAMISETA MANCHESTER UNITED ORIGINAL\n\nTALLA : S ADULTOS\n\n💲PRECIO : 79 SOLES\n\n✔️ESTADO : 8.5/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERU",
+        stock: "1",
+        talla: "S",
+        precio: 79,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009981/WhatsApp_Image_2026-02-01_at_8.14.16_PM_3_xk1k3q.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009983/WhatsApp_Image_2026-02-01_at_8.14.17_PM_2_bzsk9j.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009984/WhatsApp_Image_2026-02-01_at_8.14.17_PM_3_hz89fs.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009985/WhatsApp_Image_2026-02-01_at_8.14.18_PM_bqacge.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009981/WhatsApp_Image_2026-02-01_at_8.14.16_PM_1_wfixs0.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009981/WhatsApp_Image_2026-02-01_at_8.14.16_PM_2_nlnjwe.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Premier League" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 30,
+        documentId: "c9d0e1f2g3h4i5j6k7l8",
+        nombre: "CAMISETA MANCHESTER UNITED LOCAL ORIGINAL TEMPORADA 2011/2012",
+        descripcion: "🔗 CAMISETA MANCHESTER UNITED LOCAL ORIGINAL TEMPORADA 2011/2012\n\nTALLA : XL ADULTOS\n\nMEDIDAS AL DM 📥\n\n💲PRECIO : 120 SOLES\n✔️ESTADO : 9/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERU",
+        stock: "1",
+        talla: "XL",
+        precio: 120,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009985/WhatsApp_Image_2026-02-01_at_8.14.50_PM_1_bycmvg.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009988/WhatsApp_Image_2026-02-01_at_8.14.51_PM_3_uwcdbn.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009987/WhatsApp_Image_2026-02-01_at_8.14.51_PM_2_wowlmr.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009989/WhatsApp_Image_2026-02-01_at_8.14.52_PM_1_kzxoz3.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009990/WhatsApp_Image_2026-02-01_at_8.14.52_PM_2_kl5kjh.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009986/WhatsApp_Image_2026-02-01_at_8.14.50_PM_oalcge.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009990/WhatsApp_Image_2026-02-01_at_8.14.52_PM_3_nlswy0.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Premier League" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 31,
+        documentId: "m0n1o2p3q4r5s6t7u8v9",
+        nombre: "CAMISETA AC MILÁN LOCAL ORIGINAL TEMPORADA 2009/2010",
+        descripcion: "🔗 CAMISETA AC MILÁN LOCAL ORIGINAL TEMPORADA 2009/2010\n\nTALLA : XL ADULTOS\n\nMEDIDAS AL DM 📥\n\n💲PRECIO : 120 SOLES\n✔️ESTADO : 8/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO ELPERU",
+        stock: "1",
+        talla: "XL",
+        precio: 120,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009992/WhatsApp_Image_2026-02-01_at_8.15.17_PM_1_vv6rk8.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009992/WhatsApp_Image_2026-02-01_at_8.15.17_PM_2_gny8ip.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009991/WhatsApp_Image_2026-02-01_at_8.15.16_PM_jupa8y.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009994/WhatsApp_Image_2026-02-01_at_8.15.17_PM_3_x6kcmx.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009994/WhatsApp_Image_2026-02-01_at_8.15.17_PM_4_yrwndr.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009995/WhatsApp_Image_2026-02-01_at_8.15.17_PM_v9ycvs.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009991/WhatsApp_Image_2026-02-01_at_8.15.16_PM_1_qyg7bf.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Serie A" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 32,
+        documentId: "w1x2y3z4a5b6c7d8e9f0",
+        nombre: "CAMISETA UNIVERSITARIO DE DEPORTES ORIGINAL HOMENAJE LOLO FERNÁNDEZ",
+        descripcion: "🔗 CAMISETA UNIVERSITARIO DE DEPORTES ORIGINAL HOMENAJE LOLO FERNÁNDEZ\n\nTALLA : S ADULTOS\n\n💲PRECIO : 120 NEGOCIABLE\n\n✔️ESTADO : NUEVA CON ETIQUETAS\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "S",
+        precio: 120,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009995/WhatsApp_Image_2026-02-01_at_8.18.01_PM_a4zbyz.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010001/WhatsApp_Image_2026-02-01_at_8.18.10_PM_1_hcyjvx.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009995/WhatsApp_Image_2026-02-01_at_8.18.06_PM_1_hslf87.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010001/WhatsApp_Image_2026-02-01_at_8.18.10_PM_2_xtakpz.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009999/WhatsApp_Image_2026-02-01_at_8.18.09_PM_3_inh2zy.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009999/WhatsApp_Image_2026-02-01_at_8.18.09_PM_4_hgdn9s.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010015/WhatsApp_Image_2026-02-01_at_8.18.11_PM_1_euei9q.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010003/WhatsApp_Image_2026-02-01_at_8.18.11_PM_xujidg.jpg" }
+        ],
+        categories: [
+            { id: 4, nombre: "Liga 1" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 33,
+        documentId: "w5i12ug1fv1p2oh5",
+        nombre: "CAMISETA CHELSEA LOCAL ADIDAS ORIGINAL TEMPORADA 2008/2009",
+        descripcion: "🔗 CAMISETA CHELSEA LOCAL ADIDAS ORIGINAL TEMPORADA 2008/2009\n\nTALLA : M ADULTOS\n\n💲PRECIO : 170 SOLES\n\n✔️ESTADO : 9/10\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "M",
+        precio: 170,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010021/WhatsApp_Image_2026-02-01_at_8.20.59_PM_t4bqxw.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010020/WhatsApp_Image_2026-02-01_at_8.20.59_PM_1_xuguhn.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010018/WhatsApp_Image_2026-02-01_at_8.20.58_PM_1_p2xjz4.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010017/WhatsApp_Image_2026-02-01_at_8.20.51_PM_1_rxnihn.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010018/WhatsApp_Image_2026-02-01_at_8.20.55_PM_irku8b.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010004/WhatsApp_Image_2026-02-01_at_8.20.51_PM_ee5eb0.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010003/WhatsApp_Image_2026-02-01_at_8.20.51_PM_2_l8h3vu.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010004/WhatsApp_Image_2026-02-01_at_8.20.51_PM_3_gwxaju.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Premier League" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 34,
+        documentId: "j9h8h6v5c8b4v9k3xw",
+        nombre: "CASACA AC MILAN ADIDAS RETRO ORIGINAL",
+        descripcion: "🔗 CASACA AC MILAN ADIDAS RETRO ORIGINAL\n\nTALLA : S ADULTOS\n\n💲PRECIO : 100 soles\n\n✔️ESTADO : 9/10 SIN DETALLES\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "S",
+        precio: 100,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010007/WhatsApp_Image_2026-02-01_at_8.23.18_PM_3_pwekgj.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010006/WhatsApp_Image_2026-02-01_at_8.23.17_PM_g5gkjf.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010007/WhatsApp_Image_2026-02-01_at_8.23.18_PM_2_ly4uwk.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010007/WhatsApp_Image_2026-02-01_at_8.23.18_PM_1_s0acmp.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010010/WhatsApp_Image_2026-02-01_at_8.23.18_PM_stethe.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010021/WhatsApp_Image_2026-02-01_at_8.23.17_PM_1_reoxnb.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010011/WhatsApp_Image_2026-02-01_at_8.23.19_PM_cgfqxz.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010009/WhatsApp_Image_2026-02-01_at_8.23.18_PM_4_yb0evr.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Serie A" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 35,
+        documentId: "k90hn8b67fv3v7fws3c8",
+        nombre: "CAMISETA JUAN PABLO II ORIGINAL",
+        descripcion: "🔗 CAMISETA JUAN PABLO II ORIGINAL\n\nTALLA : M ADULTOS\n\n💲PRECIO : 70 PRECIO NEGOCIABLE\n\n✔️ESTADO : 9/10 SIN DETALLES\n♻️ SEPARA CON s/10 SOLES♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "M",
+        precio: 70,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010012/WhatsApp_Image_2026-02-01_at_8.23.32_PM_2_lig995.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010012/WhatsApp_Image_2026-02-01_at_8.23.31_PM_ootnph.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010013/WhatsApp_Image_2026-02-01_at_8.23.39_PM_rnl7fk.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009988/WhatsApp_Image_2026-02-01_at_8.23.31_PM_3_drzp3q.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009978/WhatsApp_Image_2026-02-01_at_8.23.31_PM_2_stinun.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009978/WhatsApp_Image_2026-02-01_at_8.23.31_PM_1_abunh2.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009964/WhatsApp_Image_2026-02-01_at_8.23.40_PM_ondxb9.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770009964/WhatsApp_Image_2026-02-01_at_8.23.32_PM_1_qpc871.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Liga 1" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    {
+        id: 36,
+        documentId: "j9h78f5v8n3c3c8caw",
+        nombre: "CORTAVIENTOS AC MILAN ADIDAS ORIGINAL",
+        descripcion: "🔗CORTAVIENTOS AC MILAN ADIDAS ORIGINAL\n\nTALLA : XS (MEDIDAS DM)\n\n💲PRECIO : 90 soles\n\n✔️ESTADO : NUEVO CON ETIQUETA\n♻️ SEPARA CON s/10 SOLES ♻️\n🚚ENVÍOS A TODO EL PERÚ",
+        stock: "1",
+        talla: "XS",
+        precio: 90,
+        imagen: [
+            { id: 1, name: "img1", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010255/WhatsApp_Image_2026-02-01_at_8.24.23_PM_tc75nd.jpg" },
+            { id: 2, name: "img2", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010259/WhatsApp_Image_2026-02-01_at_8.24.25_PM_f8wl1b.jpg" },
+            { id: 3, name: "img3", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010260/WhatsApp_Image_2026-02-01_at_8.24.24_PM_4_jtz3gp.jpg" },
+            { id: 4, name: "img4", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010259/WhatsApp_Image_2026-02-01_at_8.24.25_PM_2_pqw7uw.jpg" },
+            { id: 5, name: "img5", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010258/WhatsApp_Image_2026-02-01_at_8.24.25_PM_1_icr7u1.jpg" },
+            { id: 6, name: "img6", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010252/WhatsApp_Image_2026-02-01_at_8.24.24_PM_3_gvy7ew.jpg" },
+            { id: 7, name: "img7", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010252/WhatsApp_Image_2026-02-01_at_8.24.18_PM_1_b2jzfh.jpg" },
+            { id: 8, name: "img8", url: "https://res.cloudinary.com/ds4u9u1zv/image/upload/v1770010256/WhatsApp_Image_2026-02-01_at_8.24.24_PM_5_jj7pab.jpg" }
+        ],
+        categories: [
+            { id: 2, nombre: "Serie A" },
+            { id: 3, nombre: "Nuevo Ingreso" }
+        ]
+    },
+    // {
+    //     id: 37,
+    //     documentId: "",
+    //     nombre: "",
+    //     descripcion: "",
+    //     stock: "1",
+    //     talla: "",
+    //     precio: 0,
+    //     imagen: [
+    //         { id: 1, name: "img1", url: "" },
+    //         { id: 2, name: "img2", url: "" },
+    //         { id: 3, name: "img3", url: "" },
+    //         { id: 4, name: "img4", url: "" },
+    //         { id: 5, name: "img5", url: "" },
+    //         { id: 6, name: "img6", url: "" },
+    //         { id: 7, name: "img7", url: "" },
+    //         { id: 8, name: "img8", url: "" }
+    //     ],
+    //     categories: [
+    //         { id: 2, nombre: "LaLiga" },
+    //         { id: 3, nombre: "Nuevo Ingreso" }
+    //     ]
+    // },
+    // {
+    //     id: 38,
+    //     documentId: "",
+    //     nombre: "",
+    //     descripcion: "",
+    //     stock: "1",
+    //     talla: "",
+    //     precio: 0,
+    //     imagen: [
+    //         { id: 1, name: "img1", url: "" },
+    //         { id: 2, name: "img2", url: "" },
+    //         { id: 3, name: "img3", url: "" },
+    //         { id: 4, name: "img4", url: "" },
+    //         { id: 5, name: "img5", url: "" },
+    //         { id: 6, name: "img6", url: "" },
+    //         { id: 7, name: "img7", url: "" },
+    //         { id: 8, name: "img8", url: "" }
+    //     ],
+    //     categories: [
+    //         { id: 2, nombre: "LaLiga" },
+    //         { id: 3, nombre: "Nuevo Ingreso" }
+    //     ]
+    // }
 ];
 export default products;
