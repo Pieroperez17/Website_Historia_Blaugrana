@@ -4,6 +4,9 @@
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     background: #f0f2f5;
+    color: #1c1e21;          /* anula el color blanco heredado de :root */
+    color-scheme: light;     /* evita que el SO en modo oscuro invierta inputs/select */
+    text-align: left;        /* anula el text-align:center heredado de #root */
 }
 
 .admin-sidebar {
@@ -260,9 +263,22 @@
     border-radius: 8px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
-    color: #1f2937;
+    background-color: #fff;   /* fondo blanco explícito */
+    color: #1f2937;           /* texto oscuro legible */
+    color-scheme: light;
     outline: none;
-    transition: border-color 0.15s;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.admin-form-group input::placeholder,
+.admin-form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* opciones del desplegable legibles en cualquier tema del SO */
+.admin-form-group select option {
+    background-color: #fff;
+    color: #1f2937;
 }
 
 .admin-form-group input:focus,
@@ -270,6 +286,13 @@
 .admin-form-group textarea:focus {
     border-color: #A50044;
     box-shadow: 0 0 0 3px rgba(165,0,68,0.08);
+}
+
+/* el autofill del navegador no debe pintar texto blanco/fondo azul */
+.admin-form-group input:-webkit-autofill,
+.admin-form-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #1f2937;
+    box-shadow: 0 0 0 1000px #fff inset;
 }
 
 .admin-form-group textarea {
@@ -337,7 +360,7 @@
 
 .admin-upload-label {
     font-size: 13px;
-    color: #6b7280;
+    color: #4b5563;
     cursor: pointer;
 }
 
@@ -365,6 +388,7 @@
     cursor: pointer;
     transition: all 0.15s;
     background: #fff;
+    color: #374151;
     user-select: none;
 }
 
@@ -403,6 +427,7 @@
     justify-content: center;
     background: #0d1117;
     padding: 20px;
+    color-scheme: dark;   /* inputs oscuros: autofill y cursor en modo oscuro */
 }
 
 .admin-login-card {
@@ -412,6 +437,7 @@
     padding: 40px 36px;
     width: 100%;
     max-width: 400px;
+    text-align: left;   /* anula el text-align:center heredado de #root */
 }
 
 .admin-login-card h1 {
@@ -449,11 +475,24 @@
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     outline: none;
-    transition: border-color 0.15s;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.admin-login-group input::placeholder {
+    color: #6e7681;
 }
 
 .admin-login-group input:focus {
     border-color: #A50044;
+    box-shadow: 0 0 0 3px rgba(165,0,68,0.15);
+}
+
+/* autofill: mantener fondo oscuro y texto claro */
+.admin-login-group input:-webkit-autofill,
+.admin-login-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #f0f6fc;
+    box-shadow: 0 0 0 1000px #0d1117 inset;
+    caret-color: #f0f6fc;
 }
 
 .admin-login-error {
