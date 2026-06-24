@@ -1,50 +1,44 @@
 import Layout from '../Layout.jsx';
-import {ViewCardProduct} from "../components/ViewCardProduct.jsx";
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom'; 
+import { ViewCardProduct } from "../components/ViewCardProduct.jsx";
+import { useParams, Link } from 'react-router-dom';
 import './EstilosGenerales.css';
-import products from "../data/Products.js";
+import { useProductos } from "../hooks/useProductos.js";
 
 function busquedaFlexible(texto, busqueda) {
-    // Convertir ambos a minúsculas
-    const textoNormalizado = texto.toLowerCase();
-    const busquedaNormalizada = busqueda.toLowerCase();
-    
-    // Eliminar espacios extras y normalizar
-    const textoLimpio = textoNormalizado.replace(/\s+/g, ' ').trim();
-    const busquedaLimpia = busquedaNormalizada.replace(/\s+/g, ' ').trim();
-    
-    // Verificar si la búsqueda está contenida en el texto
-    return textoLimpio.includes(busquedaLimpia);
+    const t = (texto || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    const b = (busqueda || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    return t.includes(b);
 }
 
-
-export default function PaginaVistaProductos(){
+export default function PaginaVistaProductos() {
     const { id } = useParams();
-    const DataFilter = products.filter(producto => producto.categories.some(cat => busquedaFlexible(cat.nombre,id)) || busquedaFlexible(producto.nombre,id) );
+    const { productos, loading } = useProductos();
+
+    const DataFilter = productos.filter(p =>
+        p.categories.some(cat => busquedaFlexible(cat.nombre, id)) ||
+        busquedaFlexible(p.nombre, id)
+    );
+
     return (
         <Layout>
             <>
-                <h1 className="title-inicio-show" >{id}</h1>
+                <h1 className="title-inicio-show">{id}</h1>
                 <div className="container-club">
-                    {DataFilter.length > 0 ?
+                    {loading ? (
+                        <p style={{ textAlign: 'center', color: '#aaa', padding: 40, gridColumn: '1/-1' }}>Cargando...</p>
+                    ) : DataFilter.length > 0 ? (
                         DataFilter.map((producto) => (
-                            <Link to={`/producto/${producto.documentId}`} className="LinkSyleView" >
-                                <ViewCardProduct key={producto.id} product={producto} />
-                            </Link> 
+                            <Link to={`/producto/${producto.documentId}`} className="LinkSyleView" key={producto.id}>
+                                <ViewCardProduct product={producto} />
+                            </Link>
                         ))
-                        : 
-                        <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'column'
-                            }}
-                        >
-                            <h3 style={{color : 'gray', fontSize: '2rem'}}>No encontramos resultados :(</h3>
+                    ) : (
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <h3 style={{ color: 'gray', fontSize: '2rem' }}>No encontramos resultados :(</h3>
                         </div>
-                    }
+                    )}
                 </div>
             </>
         </Layout>
     );
-};
+}

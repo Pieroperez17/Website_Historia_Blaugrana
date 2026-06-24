@@ -3,29 +3,24 @@ import Layout from '../Layout.jsx';
 import './PaginaArticulo.css';
 import { ImagenContinua } from '../components/ImagenContinua.jsx';
 import { FaWhatsapp } from "react-icons/fa";
-import products from "../data/Products.js";
+import { useProducto } from '../hooks/useProductos.js';
 
-const MuestraProducto = ({product}) => {
-    var categorias = product.categories;
-    var imagesLista = product.imagen;
-
+const MuestraProducto = ({ product }) => {
     const handleWhatsAppClick = () => {
         const mensaje = `Quiero comprar la ${product.nombre} en talla ${product.talla}`;
-        const numeroWhatsApp = "51908582191";
-        const mensajeEncodificado = encodeURIComponent(mensaje);
-        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeEncodificado}`;
-        window.open(urlWhatsApp, "_blank");
+        const url = `https://wa.me/51908582191?text=${encodeURIComponent(mensaje)}`;
+        window.open(url, "_blank");
     };
-    
+
     return (
         <article className="articulo-container">
             <div className="articulo-imagen">
-                <ImagenContinua  images={imagesLista} />
+                <ImagenContinua images={product.imagen} />
             </div>
             <div className="articulo-contenido">
                 <h2 className="articulo-titulo">{product.nombre}</h2>
                 <p className="articulo-meta">Stock: {product.stock > 0 ? `${product.stock} disponibles` : 'Agotado'}</p>
-                <p className="">S/ {product.precio?.toFixed(2)}</p>
+                <p>S/ {product.precio?.toFixed(2)}</p>
                 <p className="articulo-talla">Talla: <span className='Butss'>{product.talla}</span></p>
                 <button className='button-buy' onClick={handleWhatsAppClick}>
                     <FaWhatsapp />
@@ -35,27 +30,34 @@ const MuestraProducto = ({product}) => {
                 <p className="articulo-descripcion">{product.descripcion}</p>
                 <h3 className="articulo-categorias-titulo">Categorías</h3>
                 <div className="articulo-categorias">
-                    {categorias.map((cat) => (
+                    {product.categories.map((cat) => (
                         <span key={cat.id} className="categoria-badge">{cat.nombre}</span>
                     ))}
                 </div>
             </div>
         </article>
-    )
+    );
 };
 
-
-
-
-export default function PaginaArticulo(){
+export default function PaginaArticulo() {
     const { id } = useParams();
-    const Product = products.find(producto => producto.documentId === id );
+    const { producto, loading, error } = useProducto(id);
+
+    if (loading) return (
+        <Layout>
+            <p style={{ textAlign: 'center', padding: 60, color: '#aaa' }}>Cargando producto...</p>
+        </Layout>
+    );
+
+    if (error || !producto) return (
+        <Layout>
+            <p style={{ textAlign: 'center', padding: 60, color: '#888' }}>Producto no encontrado.</p>
+        </Layout>
+    );
+
     return (
         <Layout>
-            <MuestraProducto product={Product} />
+            <MuestraProducto product={producto} />
         </Layout>
-    )
-};
-
-
-
+    );
+}
