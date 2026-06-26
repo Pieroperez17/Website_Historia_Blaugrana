@@ -1,10 +1,15 @@
-const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME
-const PRESET = import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET
+// Saneamiento defensivo: algunas variables de entorno en Vercel quedaron
+// guardadas con un BOM (U+FEFF) inicial al setearlas por CLI, lo que rompia
+// la URL de subida ("Unknown API key"). Quitamos BOM y espacios iniciales.
+const limpiar = (v) => (v || '').replace(/^[﻿\s]+/, '').trim()
+
+const CLOUD = limpiar(import.meta.env.VITE_CLOUDINARY_CLOUD_NAME)
+const PRESET = limpiar(import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET)
 
 export async function uploadImage(file) {
     if (!CLOUD || !PRESET) {
         throw new Error(
-            'Falta configuración de Cloudinary. Define VITE_CLOUDINARY_CLOUD_NAME y VITE_CLOUDINARY_UPLOAD_PRESET en las variables de entorno.'
+            'Falta configuracion de Cloudinary. Define VITE_CLOUDINARY_CLOUD_NAME y VITE_CLOUDINARY_UPLOAD_PRESET en las variables de entorno.'
         )
     }
 
