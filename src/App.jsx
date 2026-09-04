@@ -8,6 +8,8 @@ import Paises from './pages/Paises.jsx'
 import Contactanos from './pages/Contactanos.jsx'
 import PaginaArticulo from './pages/PaginaArticulo.jsx'
 import PaginaVistaProductos from './pages/PaginaVistaProductos.jsx'
+import Tienda from './pages/Tienda.jsx'
+import Nosotros from './pages/Nosotros.jsx'
 
 import AdminLogin from './pages/admin/AdminLogin.jsx'
 import AdminPanel from './pages/admin/AdminPanel.jsx'
@@ -31,6 +33,8 @@ function App() {
             <Routes>
                 {/* Tienda pública */}
                 <Route path="/" element={<Inicio />} />
+                <Route path="/tienda" element={<Tienda />} />
+                <Route path="/nosotros" element={<Nosotros />} />
                 <Route path="/nuevos-ingresos" element={<NuevosIngresos />} />
                 <Route path="/clubes" element={<Clubes />} />
                 <Route path="/paises" element={<Paises />} />

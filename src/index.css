@@ -1,14 +1,5 @@
-@font-face {
-  font-family: Poppins;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src:  url("//retrofc.pe/cdn/fonts/poppins/poppins_n4.ee28d4489eaf5de9cf6e17e696991b5e9148c716.woff?h1=cmV0cm9mYy5wZQ&h2=cmV0cm9mY3dlYi5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=dc2bc2d3375b49c3393ec197ac4ea3ba1d06a8552d1c97f3efd4431043bdd69b") format("woff");
-}
-
-
-
-
+/* La fuente Poppins se carga desde Google Fonts en index.html.
+   Antes venia de retrofc.pe y CORS la bloqueaba: no llegaba nunca. */
 :root {
   line-height: 1.5;
   font-weight: 400;
