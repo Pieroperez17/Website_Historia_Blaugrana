@@ -4,6 +4,7 @@ import { Menu, X, Search, ShoppingCart, ChevronDown, ArrowRight } from 'lucide-r
 import { FaInstagram, FaTiktok } from 'react-icons/fa6';
 import Logo from './public/logo.png';
 import { useCategorias } from './hooks/useCategorias.js';
+import { hayConfigSupabase } from './lib/supabase.js';
 import { useProductos } from './hooks/useProductos.js';
 import TarjetaProducto from './components/TarjetaProducto.jsx';
 import './index.css';
@@ -360,6 +361,12 @@ export default function Layout({ children }) {
   return (
     <div className="container">
       <Cabecera />
+      {!hayConfigSupabase && (
+        <div className="hb-aviso-config">
+          Vista previa sin conexión a la base de datos: el catálogo aparece vacío. Falta definir
+          <code> VITE_SUPABASE_URL </code> y <code> VITE_SUPABASE_ANON_KEY </code> en este entorno.
+        </div>
+      )}
       <main className="main">{children}</main>
       <Pie />
     </div>
